@@ -1,0 +1,45 @@
+{
+  "name": "voting-dapp",
+  "version": "1.0.0",
+  "description": "Full-Stack Voting dApp with Solidity, Hardhat, React, and Ethers.js",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "test:watch": "hardhat test --watch",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "frontend": "cd frontend && npm start",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:install": "cd frontend && npm install"
+  },
+  "keywords": [
+    "voting",
+    "dapp",
+    "blockchain",
+    "ethereum",
+    "solidity",
+    "hardhat",
+    "react",
+    "ethers"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "hardhat": "^2.18.0",
+    "chai": "^4.3.7",
+    "ethers": "^6.7.1",
+    "dotenv": "^16.0.3",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.1"
+  },
+  "dependencies": {}
+}
